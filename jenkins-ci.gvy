@@ -26,7 +26,7 @@ pipeline {
                 stage ('RunningTests') {
                     steps {
                         echo 'Running tests using mocha and chai'
-                        sleep 5
+                        sleep 3
                     }
                 }
 
