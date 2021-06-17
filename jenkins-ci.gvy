@@ -14,10 +14,22 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage ('CheckEslintErrors') {
-            steps {
-                echo 'Checking eslint errors in the code'
-                sh 'npm run lint-check'
+        stage ('parallelExecution') {
+            parallel: {
+
+                stage ('CheckEslintErrors') {
+                    steps {
+                        echo 'Checking eslint errors in the code'
+                        sh 'npm run lint-check'
+                    }
+                }
+                stage ('RunningTests') {
+                    steps {
+                        echo 'Running tests using mocha and chai'
+                        sleep 5
+                    }
+                }
+                
             }
         }
     }
