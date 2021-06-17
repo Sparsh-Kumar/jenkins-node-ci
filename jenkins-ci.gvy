@@ -15,7 +15,7 @@ pipeline {
             }
         }
         stage ('parallelExecution') {
-            parallel: {
+            parallel {
 
                 stage ('CheckEslintErrors') {
                     steps {
@@ -29,7 +29,7 @@ pipeline {
                         sleep 5
                     }
                 }
-                
+
             }
         }
     }
