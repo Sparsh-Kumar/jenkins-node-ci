@@ -1,0 +1,30 @@
+{
+  "name": "jenkinspractice",
+  "version": "1.0.0",
+  "description": "This is just a jenkins practice test given by Mr.Thabungba sir",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://sparsh12@gitlab.com/sparsh12/jenkinspractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sparsh12/jenkinspractice/issues"
+  },
+  "homepage": "https://gitlab.com/sparsh12/jenkinspractice#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.12.14",
+    "xss-clean": "^0.1.1"
+  }
+}
