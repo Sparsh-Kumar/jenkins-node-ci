@@ -6,10 +6,10 @@ const helmet = require ('helmet');
 const xss = require ('xss-clean');
 const bodyParser = require ('body-parser');
 const cors = require ('cors');
-const port = process.env.PORT || 9990;
+const port = 9990;
 const path = require ('path');
-const { config } = require (path.resolve (__dirname, 'config', 'config'));
-const { RouteHandler } = require (path.resolve (__dirname, 'RouteHandler', 'RouteHandler'));
+const { config } = require (path.resolve ('./', 'config', 'config'));
+const { RouteHandler } = require (path.resolve ('./', 'RouteHandler', 'RouteHandler'));
 
 mongoose.Promise = global.Promise;
 mongoose.connect (config.DATABASE_URL).then (() => {
@@ -28,4 +28,4 @@ app.use ('/api', RouteHandler);
 
 app.listen (port, () => {
     console.log (`http://localhost:${port}`);
-})
+});
