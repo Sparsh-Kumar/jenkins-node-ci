@@ -14,5 +14,11 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage ('CheckEslintErrors') {
+            steps {
+                echo 'Checking eslint errors in the code'
+                sh 'npm run lint-check'
+            }
+        }
     }
 }
