@@ -23,10 +23,10 @@ pipeline {
                         sh 'npm run lint-check'
                     }
                 }
-                stage ('RunningTests') {
+                stage ('RunningMochaTests') {
                     steps {
                         echo 'Running tests using mocha and chai'
-                        sleep 3
+                        sh 'npm test'
                     }
                 }
 

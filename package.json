@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha",
+    "test": "mocha --exit test/testCases.js",
     "lint-check": "npx eslint app.js"
   },
   "repository": {
