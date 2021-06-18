@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "lint-check": "npx eslint app.js"
   },
   "repository": {
@@ -29,6 +29,9 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "eslint": "^7.28.0"
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.28.0",
+    "mocha": "^9.0.0"
   }
 }

@@ -26,6 +26,6 @@ app.use (bodyParser.json ({ limit: '10kb' }));
 
 app.use ('/api', RouteHandler);
 
-app.listen (port, () => {
+module.exports = app.listen (port, () => {
     console.log (`http://localhost:${port}`);
 });
