@@ -1,3 +1,3 @@
 # JenkinsPractice
 
-This is just a jenkins practice test given by Mr.Thabungba sir
+This is just a sample application making use of Jenkins for making a CI pipeline.
